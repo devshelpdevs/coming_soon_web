@@ -1,3 +1,9 @@
+@import 'variables';
+@import 'mixins';
+@import 'lists';
+@import 'functions';
+
+
 * {
     box-sizing: border-box;
     // margin: 0;
@@ -30,6 +36,10 @@
 .mb-0 {
     margin-bottom: 1rem !important;
 }
+.note {
+    border-left: 4px solid green;
+    padding-left: 6px;
+}
 // mobile first style
 
 @font-face {
@@ -53,6 +63,10 @@ body {
     height: auto;
     font-family: $mono;
     line-height: 1.5;
+    @include breakpoint(breakpoint(xl)) {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 header {
@@ -106,7 +120,7 @@ header {
                 border: 1px solid rgb(189, 185, 185);
                 border-radius: 0.2rem;
                 padding: 0.05rem 0.5rem;
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 0.8rem;
                 position: relative;
                 background-color: #fff;
@@ -129,15 +143,29 @@ header {
     flex-direction: column;
     padding: 5rem 0;
     > .hero_text_box {
-        // color: gainsboro;
+        width: 100%;
+        @include breakpoint(breakpoint(xl)) {
+            width: 50%;
+        }
+        > .hero_text {
+            font-size: 1.5rem;
+            @include breakpoint(breakpoint(xl)) {
+                font-size: 1rem;
+                text-align: left !important;
+            }
+        }
     }
     > .hero_cta {
+        @include breakpoint(breakpoint(xl)) {
+            flex-direction: row !important;
+        }
         & .cta-primary {
             text-decoration: none;
             display:inline-block;
             color:white;
-            background: rgb(30, 167, 253);
-            padding: 1rem 1rem;
+            background: $blue-color;
+            padding: 0.8rem 1rem;
+            vertical-align: middle;
             font-weight: 700;
             font-family: $pro;
             font-size: 0.9rem;
@@ -154,7 +182,7 @@ header {
             font-family: $pro;
             font-size: 0.9rem;
             &:hover {
-                color:rgb(30, 167, 253);
+                color: $blue-color;
             }
         }
     }
@@ -182,18 +210,31 @@ header {
 }
 
 .get_involved {
+    margin: 2rem 0;
     & .heading1 {
         margin: 1rem 0;
     }
     & .ways-to-container {
         width: 100%;
-        > .contribute  {
-            border: 1px solid red;
+        @include breakpoint(breakpoint(xl)) {
+            flex-direction: row !important;
+            justify-content: space-between !important;
+        }
+        > .contribute,.donate,.connect  {
+            border: 1px solid gainsboro;
+            border-radius: 0.05rem;
             display:block;
+            width: 100%;
+            height: auto;
             margin: 0.5rem 0;
             text-align: center;
             padding: 1rem;
-            > h3 {
+            @include breakpoint(breakpoint(xl)) {
+                display: inline-block;
+                width: (90% / 3);
+            }
+            > h3,h4 {
+                text-align: center;
                 margin: 0.4rem 0;
             }
             > p {
@@ -201,30 +242,13 @@ header {
             }
         }
         > .donate {
-            border: 1px solid red;
-            display:block;
-            margin: 0.5rem 0;
-            text-align: center;
-            padding: 1rem;
-            > h3 {
-                margin: 0.4rem 0;
-            }
-            > p {
-                font-family: $pro;
-            }
-        }
-        > .connect {
-            border: 1px solid red;
-            display:block;
-            margin: 0.5rem 0;
-            text-align: center;
-            padding: 1rem;
-            > h4 {
-                text-align: center;
-                margin: 0.4rem 0;
-            }
-            > p {
-                font-family: $pro;
+            > p > a {
+                text-decoration: none;
+                display:block;
+                color: white;
+                font-weight: 600;
+                padding: 0.3rem 2rem;
+                background-color: $blue-color;
             }
         }
     }
@@ -234,5 +258,12 @@ footer {
     margin: 1rem 0;
     > .footer_text {
         text-align: center;
+    }
+}
+a {
+    text-decoration: underline;
+    color: black;
+    &:hover {
+        color:$blue-color;
     }
 }
