@@ -1,5 +1,238 @@
 * {
     box-sizing: border-box;
+    // margin: 0;
+    // padding: 0;
+}
+
+// utility classes
+
+.d-flex {
+    display: flex !important;
+}
+.justify-space-between {
+    justify-content: space-between !important;
+}
+.f-direction-row {
+    flex-direction: row !important;
+}
+.f-direction-column {
+    flex-direction: column !important;
+}
+.f-wrap {
+    flex-wrap: wrap;
+}
+.text-a-center {
+    text-align: center !important;
+}
+.mt-0 {
+    margin-top: 1rem !important;
+}
+.mb-0 {
+    margin-bottom: 1rem !important;
+}
+// mobile first style
+
+@font-face {
+    font-family: "SF Mono";
+    src: url("/font/SFMono-Regular.ttf");
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "SF Pro";
+    src: url("/font/SFProText-Regular.ttf");
+    font-style: normal;
+}
+
+$mono:'SF Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$pro: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+body {
+    width: 100%;
+    height: auto;
+    font-family: $mono;
+    line-height: 1.5;
+}
+
+header {
+    padding: 36px 0 1rem 0;
     margin: 0;
-    padding: 0;
+    & .nav_item_left {
+        > .logo {
+            width: 32px;
+            height: 32px;
+            align-items: center;
+            > a {
+                    > img {
+                    width: 32px;
+                    height: 32px;
+                    object-fit: contain;
+                }
+            }
+            > .logo_text {
+                vertical-align: middle;
+                margin-left: 0.5rem;
+                font-family: $pro;
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    & .nav_item_right {
+        > button {
+            padding: 0.05rem 0.5rem;
+            border: 1px solid rgb(189, 185, 185);
+            border-radius: 0.2rem;
+            > a {
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+                margin-left: 0.1rem;
+                display: block;
+                > img {
+                    width: 10px;
+                    height: 10px;
+                    object-fit: contain;
+                }
+            }
+        }
+        > a {
+            color: black;
+            text-decoration: none;
+            display:inline-block;
+            > .stargazers_count {
+                margin-left: -0.2rem;
+                border: 1px solid rgb(189, 185, 185);
+                border-radius: 0.2rem;
+                padding: 0.05rem 0.5rem;
+                font-weight: 600;
+                font-size: 0.8rem;
+                position: relative;
+                background-color: #fff;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -0.7rem;
+                    top: 0.23rem;
+                    border-top: 5px solid transparent;
+                    border-bottom: 5px solid transparent;
+                    border-right: 5px solid rgb(189, 185, 185);
+                    border-left: 5px solid transparent;
+                }
+            }
+        }
+    }
+}
+
+.hero_container {
+    flex-direction: column;
+    padding: 5rem 0;
+    > .hero_text_box {
+        // color: gainsboro;
+    }
+    > .hero_cta {
+        & .cta-primary {
+            text-decoration: none;
+            display:inline-block;
+            color:white;
+            background: rgb(30, 167, 253);
+            padding: 1rem 1rem;
+            font-weight: 700;
+            font-family: $pro;
+            font-size: 0.9rem;
+            &:hover {
+                transform: translateY(-0.1rem);
+            }
+        }
+        & .cta-secondary {
+            text-decoration: underline;
+            display:inline-block;
+            color:black;
+            padding: 1rem 1rem;
+            font-weight: 700;
+            font-family: $pro;
+            font-size: 0.9rem;
+            &:hover {
+                color:rgb(30, 167, 253);
+            }
+        }
+    }
+}
+
+.about_container {
+    width: 100%;
+    & .heading1, & .project_readme > h2, h3, ul {
+        margin: 1rem 0;
+    }
+    & .project_readme {
+        > p {
+        font-family: $pro;
+    }
+    & ul {
+        margin-left: 0.5rem;
+        // list-style-type: d;
+        > li {
+            // display:block;
+            margin: 0.4rem 0;
+            font-size: 0.9rem;
+        }
+    }
+    }
+}
+
+.get_involved {
+    & .heading1 {
+        margin: 1rem 0;
+    }
+    & .ways-to-container {
+        width: 100%;
+        > .contribute  {
+            border: 1px solid red;
+            display:block;
+            margin: 0.5rem 0;
+            text-align: center;
+            padding: 1rem;
+            > h3 {
+                margin: 0.4rem 0;
+            }
+            > p {
+                font-family: $pro;
+            }
+        }
+        > .donate {
+            border: 1px solid red;
+            display:block;
+            margin: 0.5rem 0;
+            text-align: center;
+            padding: 1rem;
+            > h3 {
+                margin: 0.4rem 0;
+            }
+            > p {
+                font-family: $pro;
+            }
+        }
+        > .connect {
+            border: 1px solid red;
+            display:block;
+            margin: 0.5rem 0;
+            text-align: center;
+            padding: 1rem;
+            > h4 {
+                text-align: center;
+                margin: 0.4rem 0;
+            }
+            > p {
+                font-family: $pro;
+            }
+        }
+    }
+}
+
+footer {
+    margin: 1rem 0;
+    > .footer_text {
+        text-align: center;
+    }
 }
