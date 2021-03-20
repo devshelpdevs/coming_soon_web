@@ -37,7 +37,7 @@
 }
 
 .note {
-  border-left: 4px solid green;
+  border-left: 4px solid #6889FD;
   padding-left: 6px;
 }
 
@@ -97,11 +97,35 @@ header .nav_item_left > .logo {
   height: 100px;
   align-items: center;
 }
+@media screen and (min-width: 1012px) {
+  header .nav_item_left > .logo {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header .nav_item_left > .logo {
+    width: 200px;
+    height: 200px;
+  }
+}
 header .nav_item_left > .logo > a > img {
   width: 150px;
   height: 100px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+@media screen and (min-width: 1012px) {
+  header .nav_item_left > .logo > a > img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header .nav_item_left > .logo > a > img {
+    width: 200px;
+    height: 200px;
+  }
 }
 header .nav_item_left > .logo > .logo_text {
   vertical-align: middle;
@@ -272,9 +296,9 @@ header .nav_item_right > a > .stargazers_count::before {
 .get_involved .ways-to-container > .donate > p > a {
   text-decoration: none;
   display: block;
-  color: white;
+  color: #fff;
   font-weight: 600;
-  padding: 0.3rem 2rem;
+  padding: 0.5rem 2rem;
   background-color: #6889FD;
 }
 

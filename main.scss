@@ -37,7 +37,7 @@
     margin-bottom: 1rem !important;
 }
 .note {
-    border-left: 4px solid green;
+    border-left: 4px solid $banner-color;
     padding-left: 6px;
 }
 // mobile first style
@@ -94,11 +94,27 @@ header {
             width: 150px;
             height: 100px;
             align-items: center;
+            @include breakpoint(breakpoint(lg)) {
+                width: 200px;
+                height: 200px;
+            }
+            @include breakpoint(breakpoint(xl)) {
+                width: 200px;
+                height: 200px;
+            }
             > a {
                     > img {
                     width: 150px;
                     height: 100px;
                     object-fit: contain;
+                    @include breakpoint(breakpoint(lg)) {
+                        width: 200px;
+                        height: 200px;
+                    }
+                    @include breakpoint(breakpoint(xl)) {
+                        width: 200px;
+                        height: 200px;
+                    }
                 }
             }
             > .logo_text {
@@ -268,9 +284,9 @@ header {
             > p > a {
                 text-decoration: none;
                 display:block;
-                color: white;
+                color: #fff;
                 font-weight: 600;
-                padding: 0.3rem 2rem;
+                padding: 0.5rem 2rem;
                 background-color: $banner-color;
             }
         }
