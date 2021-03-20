@@ -108,6 +108,8 @@ header {
                     width: 10px;
                     height: 10px;
                     object-fit: contain;
+                    margin-right: 0.15rem;
+                    font-family: $pro;
                 }
             }
         }
@@ -163,7 +165,7 @@ header {
             text-decoration: none;
             display:inline-block;
             color:white;
-            background: $blue-color;
+            background: $banner-color;
             padding: 0.8rem 1rem;
             vertical-align: middle;
             font-weight: 700;
@@ -248,7 +250,7 @@ header {
                 color: white;
                 font-weight: 600;
                 padding: 0.3rem 2rem;
-                background-color: $blue-color;
+                background-color: $banner-color;
             }
         }
     }
@@ -264,6 +266,15 @@ a {
     text-decoration: underline;
     color: black;
     &:hover {
-        color:$blue-color;
+        color:$banner-color;
     }
+}
+.coming_soon_banner {
+    width: 100%;
+    height: auto;
+    background-color: $banner-color;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1rem 0;
 }

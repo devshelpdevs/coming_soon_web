@@ -101,6 +101,8 @@ header .nav_item_right > button > a > img {
   height: 10px;
   -o-object-fit: contain;
      object-fit: contain;
+  margin-right: 0.15rem;
+  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 header .nav_item_right > a {
   color: black;
@@ -158,7 +160,7 @@ header .nav_item_right > a > .stargazers_count::before {
   text-decoration: none;
   display: inline-block;
   color: white;
-  background: #58A6ff;
+  background: #6889FD;
   padding: 0.8rem 1rem;
   vertical-align: middle;
   font-weight: 700;
@@ -242,7 +244,7 @@ header .nav_item_right > a > .stargazers_count::before {
   color: white;
   font-weight: 600;
   padding: 0.3rem 2rem;
-  background-color: #58A6ff;
+  background-color: #6889FD;
 }
 
 footer {
@@ -257,5 +259,15 @@ a {
   color: black;
 }
 a:hover {
-  color: #58A6ff;
+  color: #6889FD;
+}
+
+.coming_soon_banner {
+  width: 100%;
+  height: auto;
+  background-color: #6889FD;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1rem 0;
 }/*# sourceMappingURL=main.css.map */
