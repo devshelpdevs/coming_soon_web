@@ -1,0 +1,69 @@
+/*Utlility classes for padding and margin*/
+
+/*padding*/
+
+
+@each $key, $value in $padding {
+    .padd-#{$key} {
+        padding: $value !important;
+    }
+    .padd-top-#{$key} {
+        padding-top: $value !important;
+    }
+    .padd-left-#{$key} {
+        padding-left: $value !important;
+    }
+    .padd-right-#{$key} {
+        padding-right: $value !important;
+    }
+    .padd-bottom-#{$key} {
+        padding-bottom: $value !important;
+    }
+    .padd-x-#{$key} {
+        padding: $value 0 !important;
+    }
+    .padd-y-#{$key} {
+        padding: 0 $value !important;
+    }
+}
+
+/*margin*/
+
+@each $key, $value in $padding {
+    .mar-#{$key} {
+        margin: $value !important;
+    }
+    .mar-top-#{$key} {
+        margin-top: $value !important;
+    }
+    .mar-left-#{$key} {
+        margin-left: $value !important;
+    }
+    .mar-right-#{$key} {
+        margin-right: $value !important;
+    }
+    .mar-bottom-#{$key} {
+        margin-bottom: $value !important;
+    }
+    .mar-x-#{$key} {
+        margin: $value 0 !important;
+    }
+    .mar-y-#{$key} {
+        margin: 0 $value !important;
+    }
+}
+
+/*display utlility*/
+
+.d-flex {
+    @include get-display(display(flex) !important);
+}
+.d-block {
+    @include get-display(display(block) !important);
+}.d-inline-block {
+    @include get-display(display(inline-block) !important);
+}.d-inline{
+    @include get-display(display(inline) !important);
+}.d-none {
+    @include get-display(display(none) !important);
+}
