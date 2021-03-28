@@ -56,19 +56,19 @@
 /*display utlility*/
 
 .d-flex {
-    @include get-display(display(flex) !important);
+    @include get-display(display(flex));
 }
 .d-block {
-    @include get-display(display(block) !important);
+    @include get-display(display(block));
 }
 .d-inline-block {
-    @include get-display(display(inline-block) !important);
+    @include get-display(display(inline-block));
 }
 .d-inline{
-    @include get-display(display(inline) !important);
+    @include get-display(display(inline));
 }
 .d-none {
-    @include get-display(display(none) !important);
+    @include get-display(display(none));
 }
 
 /*flex direction*/
