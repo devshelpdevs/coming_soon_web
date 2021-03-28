@@ -9,3 +9,20 @@
         @extend *;
     }
 }
+
+body {
+    width: 100%;
+    padding: 0 10%;
+    height: auto;
+    background-color: $hero-bg-color;
+    @include breakpoint(breakpoint(xl)) {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    font-family: $pro;
+}
+a {
+    text-decoration: none;
+    color: $blue-color;
+}

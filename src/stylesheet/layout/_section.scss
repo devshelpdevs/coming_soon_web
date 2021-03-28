@@ -1,0 +1,176 @@
+.hero_container {
+    width: 100%;
+    height: 100vh;
+    background-color: $hero-bg-color;
+    & .hero_text_box {
+        > .header-text {
+            font-family: $pro;
+            > h1 {
+                font: {
+                    size: 4rem;
+                }
+                color: $hero-text-color;
+                & .bolder {
+                    font-size: 5rem;
+                }
+                & svg {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+    }
+    & .hero_text {
+        color: $text-color;
+    }
+        .hero_cta {
+        a {
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            background-color: $blue-color;
+            border-radius: 50px;
+            color: $text-color;
+            padding: 20px 30px;
+        }
+    }
+    & .note {
+        color:$text-color;
+        > a {
+            text-decoration: none;
+            color: $blue-color;
+        }
+    }
+}   
+
+.hero_cta {
+    a {
+        text-decoration: none;
+        background-color: $blue-color;
+        border-radius: 50px;
+        color: $text-color;
+    }
+}
+
+.about_container {
+    #about {
+        color: #fff;
+        font: {
+            size: 2.5rem;
+        }
+    }
+    & .project_readme {
+            .projectReadme_intro {
+                color: $intro_color;
+            }
+            .motivation {
+                color:$purple;
+            }
+            .key_text {
+                color: $intro_color;
+            }   
+            .para-left, .para-right {
+                color: $text-color;
+            } 
+    }
+}
+
+.readme-ul {
+    .readme-li {
+        color: $text-color;
+        line-height: 1.6;
+    }
+}
+.challenges-section {
+
+}
+.challenges-p {
+    color:$text-color;
+}
+.key_text {
+    color: $intro_color;
+    font: {
+        size: 1.3rem;
+    }
+    line-height: 1.4;
+
+    &::after {
+        content: " - ";
+    }
+
+}
+
+.para-left, .para-right , p{
+                color: $text-color;
+                width: 100%;
+                line-height: 1.6;
+            } 
+.partners {
+    > .partner_heading {
+        color: $text-color;
+    }
+
+    > .profile_wrap {
+        flex-wrap: wrap;
+        > .thumbnail {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+    }
+}
+
+.get_involved {
+    .head_text {
+        color:$text-color;
+    }
+    & .ways-to-container {
+        width: 100%;
+        > .contribute {
+            border-radius: 20px;
+            line-height: 1.5;
+            background-color: $text-color;
+            > h3 {
+                background-color: $blue-color;
+                border-radius: 20px;
+                color: $text-color;
+                font-size: 0.9rem;
+            }
+            > p {
+                color: #6e7191;
+                font-size: 0.9rem;
+            }
+            > .in_link {
+                display: block;
+                text-decoration: underline;
+                font: {
+                    size: 0.9rem;
+                }
+                > img {
+                    width:0.8rem;
+                    height: 0.8rem;
+                }
+            }
+        }
+        > .donate {
+            @extend .contribute;
+            > h3 {
+                background-color: $hero-bg-color;
+                border-radius: 20px;
+                color: $text-color;
+            }
+            > .in_link {
+                border: 1px solid $blue-color;
+                border-radius: 20px;
+            }
+        }
+        > .connect {
+            @extend .contribute;
+            > h3 {
+                background-color: $purple;
+                border-radius: 20px;
+                color: $text-color;
+            }
+        }
+    }
+}

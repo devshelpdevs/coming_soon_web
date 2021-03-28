@@ -5,5 +5,38 @@
 };
 
 @mixin get-display($option) {
-    display: $option;
+    display: $option !important;
+}
+
+@mixin flex-direction($dir) {
+    -webkit-flex-direction: $dir !important;
+    -moz-flex-direction: $dir !important;
+    -ms-flex-direction: $dir !important;
+    flex-direction: $dir !important;
+}
+
+@mixin flex-justify($position) {
+    -webkit-justify-content: $position !important;
+    -moz-justify-content: $position !important;
+    -ms-justify-content: $position !important;
+    justify-content: $position !important;
+}
+
+@mixin flex-align($position) {
+    -webkit-align-items: $position !important;
+    -moz-align-items: $position !important;
+    -ms-align-items: $position !important;
+    align-items: $position !important;
+}
+
+@mixin float($dir) {
+    float: $dir !important;
+}
+
+@mixin text-align($align) {
+    text-align: $align !important;
+}
+
+@mixin position($pos) {
+    position: $pos !important;
 }
