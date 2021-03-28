@@ -1,0 +1,63 @@
+header {
+    width: 100%;
+    border: 1px solid red;
+    padding: 0 1rem;
+    & .nav_item_left {
+        .logo {
+             > a {
+                //  display: block;
+                 text-decoration: none;
+                 & img {
+                     width: 2.5rem;
+                     height: 2.5rem;
+                 }
+             }
+             & .logo_text {
+                font: {
+                    family: $pro;
+                    size: 0.8rem;
+                }
+                margin : {
+                    left: 0.4rem;
+                }
+             }
+        }
+    }
+    & .nav_item_right {
+        .twitter_follow {
+            margin-right: 3rem;
+            & img {
+                width:0.85rem;
+                height: 0.85rem
+            }
+        }
+        .star_project {
+            text-decoration: none;
+            border: 1px solid brown;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            padding: 0 0.8rem;
+            font: {
+                family: $pro;
+                size: 1rem;
+            }
+            & img {
+                width: 0.85rem;
+                height: 0.85rem;
+            }
+        }
+        .stargazers {
+            border: 1px  solid red;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            padding: 0 0.8rem;
+            & .stargazers_count {
+                text-decoration: none;
+                font: {
+                    family: $pro;
+                    size: 1rem;
+                }
+            }
+        }
+    }
+}

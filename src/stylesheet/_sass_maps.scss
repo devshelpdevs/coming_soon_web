@@ -1,0 +1,35 @@
+$display: (
+    flex : flex,
+    block: block,
+    none: none,
+    inline-block: inline-block,
+    inline: inline
+);
+
+$padding: (
+    0: 0,
+    1: 4px,
+    2: 8px,
+    3: 16px,
+    4: 24px,
+    5: 32px,
+    6: 40px
+);
+
+$margin: (
+    0: 0,
+    1: 4px,
+    2: 8px,
+    3: 16px,
+    4: 24px,
+    5: 32px,
+    6: 40px
+);
+
+$breakpoints : (
+    "xs": $width-xs,
+    "sm": $width-sm,
+    "md": $width-md,
+    "lg": $width-lg,
+    "xl": $width-xl
+);

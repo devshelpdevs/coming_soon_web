@@ -1,3 +1,7 @@
 @function breakpoint($width) {
     @return map-get($breakpoints, $width);
 }
+
+@function display($dis) {
+    @return map-get($display,$dis);
+}

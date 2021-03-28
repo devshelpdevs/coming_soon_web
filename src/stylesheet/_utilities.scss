@@ -1,0 +1,169 @@
+/*Utlility classes for padding and margin*/
+
+/*padding*/
+
+
+@each $key, $value in $padding {
+    .padd-#{$key} {
+        padding: $value !important;
+    }
+    .padd-top-#{$key} {
+        padding-top: $value !important;
+    }
+    .padd-left-#{$key} {
+        padding-left: $value !important;
+    }
+    .padd-right-#{$key} {
+        padding-right: $value !important;
+    }
+    .padd-bottom-#{$key} {
+        padding-bottom: $value !important;
+    }
+    .padd-x-#{$key} {
+        padding: $value 0 !important;
+    }
+    .padd-y-#{$key} {
+        padding: 0 $value !important;
+    }
+}
+
+/*margin*/
+
+@each $key, $value in $padding {
+    .mar-#{$key} {
+        margin: $value !important;
+    }
+    .mar-top-#{$key} {
+        margin-top: $value !important;
+    }
+    .mar-left-#{$key} {
+        margin-left: $value !important;
+    }
+    .mar-right-#{$key} {
+        margin-right: $value !important;
+    }
+    .mar-bottom-#{$key} {
+        margin-bottom: $value !important;
+    }
+    .mar-x-#{$key} {
+        margin: $value 0 !important;
+    }
+    .mar-y-#{$key} {
+        margin: 0 $value !important;
+    }
+}
+
+/*display utlility*/
+
+.d-flex {
+    @include get-display(display(flex) !important);
+}
+.d-block {
+    @include get-display(display(block) !important);
+}
+.d-inline-block {
+    @include get-display(display(inline-block) !important);
+}
+.d-inline{
+    @include get-display(display(inline) !important);
+}
+.d-none {
+    @include get-display(display(none) !important);
+}
+
+/*flex direction*/
+
+.flex-d-row {
+    @include flex-direction(row);
+}
+
+.flex-d-column {
+    @include flex-direction(column);
+}
+
+.f-justify-space-evenly {
+     @include flex-justify(space-evenly);
+}
+
+.f-justify-space-between {
+     @include flex-justify(space-between);
+}
+
+.f-justify-space-around {
+     @include flex-justify(space-around);
+}
+
+.f-justify-flex-end {
+     @include flex-justify(end);
+}
+
+.f-justify-flex-start {
+     @include flex-justify(start);
+}
+.f-justify-center {
+     @include flex-justify(center);
+}
+
+
+.f-align-space-evenly {
+     @include flex-align(space-evenly);
+}
+
+.f-align-space-between {
+     @include flex-align(space-between);
+}
+
+.f-align-space-around {
+     @include flex-align(space-around);
+}
+
+.f-align-flex-end {
+     @include flex-align(end);
+}
+
+.f-align-flex-start {
+     @include flex-align(start);
+}
+.f-align-center {
+     @include flex-align(center);
+}
+
+.float-right {
+    @include float(right);
+}
+
+.float-left {
+    @include float(left);
+}
+
+.float-center {
+    @include float(center);
+}
+
+.t-align-right {
+    @include text-align(right);
+}
+
+.t-align-left {
+    @include text-align(left);
+}
+
+.t-align-center {
+    @include text-align(center);
+}
+
+.position-relative {
+    @include position(relative);
+}
+
+.position-fixed {
+    @include position(fixed);
+}
+
+.position-absolute {
+    @include position(absolute)
+}
+
+.position-sticky {
+    @include position(sticky);
+}
