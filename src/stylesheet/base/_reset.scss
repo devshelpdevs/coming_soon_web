@@ -16,9 +16,29 @@ body {
     height: auto;
     background-color: $hero-bg-color;
     @include breakpoint(breakpoint(xl)) {
-        width: 80%;
+        width: 60%;
         margin: 0 auto;
         padding: 0;
+    }
+    @include breakpoint(breakpoint(lg)) {
+        width: 80%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    @include breakpoint(breakpoint(s)) {
+    // 
+    }
+    @include breakpoint(breakpoint(xs)) {
+        // left: -12px;
+        // top: 0;
+    }
+    @include breakpoint(breakpoint(md)) {
+        width: 80%;
+        margin: 0 auto;
+    }
+    @include breakpoint(breakpoint(sm)) {
+        width: 70%;
+        margin: 0 auto;
     }
     font-family: $pro;
 }
