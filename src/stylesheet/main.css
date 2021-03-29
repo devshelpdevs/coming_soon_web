@@ -626,8 +626,33 @@ header .nav_item_right .stargazers .stargazers_count {
 
 .hero_container {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-color: #14142B;
+}
+@media screen and (min-width: 1280px) {
+  .hero_container {
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 370px) {
+  .hero_container {
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 544px) {
+  .hero_container {
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero_container {
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 1012px) {
+  .hero_container {
+    height: 100vh;
+  }
 }
 .hero_container .hero_text_box > .header-text {
   font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -637,27 +662,142 @@ header .nav_item_right .stargazers .stargazers_count {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 4rem;
+  font-size: 4rem;
   font-weight: 500;
   color: #9959db #308fe8;
-  margin: 70px 0;
+  margin: 60px 0;
+}
+@media screen and (min-width: 1280px) {
+  .hero_container .hero_text_box > .header-text > h1 {
+    font-size: 10rem;
+  }
+}
+@media screen and (min-width: 544px) {
+  .hero_container .hero_text_box > .header-text > h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero_container .hero_text_box > .header-text > h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 1012px) {
+  .hero_container .hero_text_box > .header-text > h1 {
+    font-size: 7.8rem;
+  }
 }
 .hero_container .hero_text_box > .header-text > h1 .bolder {
-  font-weight: 700;
+  font-weight: 900;
+}
+@media screen and (min-width: 1280px) {
+  .hero_container .hero_text_box > .header-text > h1 {
+    margin: 70px 0;
+  }
+}
+@media screen and (min-width: 370px) {
+  .hero_container .hero_text_box > .header-text > h1 {
+    margin: 70px 0;
+  }
+}
+@media screen and (min-width: 544px) {
+  .hero_container .hero_text_box > .header-text > h1 {
+    margin: 60px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero_container .hero_text_box > .header-text > h1 {
+    margin: 40px 0;
+  }
+}
+@media screen and (min-width: 1012px) {
+  .hero_container .hero_text_box > .header-text > h1 {
+    margin: 30px 0;
+  }
 }
 .hero_container .hero_text_box > .header-text svg {
   width: 32px;
   height: 32px;
 }
+@media screen and (min-width: 1280px) {
+  .hero_container .hero_text_box > .header-text svg {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media screen and (min-width: 1012px) {
+  .hero_container .hero_text_box > .header-text svg {
+    width: 80px;
+    height: 80px;
+  }
+}
 .hero_container .hero_text_box > .header-text .svg1 {
   top: 20px;
   left: 0;
+}
+@media screen and (min-width: 1280px) {
+  .hero_container .hero_text_box > .header-text .svg1 {
+    left: 130px;
+  }
+}
+@media screen and (min-width: 1012px) {
+  .hero_container .hero_text_box > .header-text .svg1 {
+    left: 130px;
+  }
+}
+@media screen and (min-width: 370px) {
+  .hero_container .hero_text_box > .header-text .svg1 {
+    left: 80px;
+  }
+}
+@media screen and (min-width: 544px) {
+  .hero_container .hero_text_box > .header-text .svg1 {
+    left: 80px;
+  }
 }
 .hero_container .hero_text_box > .header-text .svg2 {
   right: -13px;
   top: 190px;
 }
+@media screen and (min-width: 1280px) {
+  .hero_container .hero_text_box > .header-text .svg2 {
+    right: 200px;
+  }
+}
+@media screen and (min-width: 1012px) {
+  .hero_container .hero_text_box > .header-text .svg2 {
+    right: 200px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero_container .hero_text_box > .header-text .svg2 {
+    right: 180px;
+  }
+}
+@media screen and (min-width: 1012px) {
+  .hero_container .hero_text_box > .header-text .svg2 {
+    right: 180px;
+  }
+}
 .hero_container .hero_text {
   color: #fff;
+  font-size: 0.9rem;
+}
+.hero_container .hero_cta {
+  display: block;
+  width: 100%;
+}
+@media screen and (min-width: 1280px) {
+  .hero_container .hero_cta {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1012px) {
+  .hero_container .hero_cta {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 .hero_container .hero_cta a {
   text-decoration: none;
@@ -724,6 +864,47 @@ header .nav_item_right .stargazers .stargazers_count {
   line-height: 1.6;
 }
 
+@media screen and (min-width: 1280px) {
+  .para-left {
+    width: 70%;
+    margin: 2rem auto 0 0;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1012px) {
+  .para-left {
+    width: 70%;
+    margin: 2rem auto 0 0;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .para-right {
+    width: 70%;
+    margin: 2rem 0 0 auto;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1012px) {
+  .para-right {
+    width: 70%;
+    margin: 2rem 0 0 auto;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .readme-li {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1012px) {
+  .readme-li {
+    font-size: 0.9rem;
+  }
+}
+
 .partners > .partner_heading {
   color: #fff;
 }
@@ -738,8 +919,20 @@ header .nav_item_right .stargazers .stargazers_count {
 .partners > .profile_wrap > .thumbnail > a img {
   -o-object-fit: contain;
      object-fit: contain;
-  width: 100%;
+  width: 90%;
   height: 100%;
+}
+@media screen and (min-width: 1280px) {
+  .partners > .profile_wrap > .thumbnail > a img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1012px) {
+  .partners > .profile_wrap > .thumbnail > a img {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .get_involved .head_text {
@@ -747,11 +940,37 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 .get_involved .ways-to-container {
   width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 1280px) {
+  .get_involved .ways-to-container {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
+}
+@media screen and (min-width: 1012px) {
+  .get_involved .ways-to-container {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
 }
 .get_involved .ways-to-container > .contribute, .get_involved .ways-to-container > .connect, .get_involved .ways-to-container > .donate {
   border-radius: 20px;
   line-height: 1.5;
   background-color: #fff;
+  height: auto;
+}
+@media screen and (min-width: 1280px) {
+  .get_involved .ways-to-container > .contribute, .get_involved .ways-to-container > .connect, .get_involved .ways-to-container > .donate {
+    width: 30%;
+    height: 350px;
+  }
+}
+@media screen and (min-width: 1012px) {
+  .get_involved .ways-to-container > .contribute, .get_involved .ways-to-container > .connect, .get_involved .ways-to-container > .donate {
+    width: 30%;
+    height: 350px;
+  }
 }
 .get_involved .ways-to-container > .contribute > h3, .get_involved .ways-to-container > .connect > h3, .get_involved .ways-to-container > .donate > h3 {
   background-color: #115FA7;
@@ -773,7 +992,7 @@ header .nav_item_right .stargazers .stargazers_count {
   height: 0.8rem;
 }
 .get_involved .ways-to-container > .donate > h3 {
-  background-color: rgba(67, 74, 116, 0.73);
+  background-color: #14142B;
   border-radius: 20px;
   color: #fff;
 }
