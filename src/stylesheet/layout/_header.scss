@@ -27,9 +27,9 @@ header {
         .twitter_follow {
             color: $header-text-color;
             font: {
-                size: 0.7rem;
+                size: 0.6rem;
             }
-            // margin-right: 3rem;
+            margin-right: 0;
             & img {
                 width:0.85rem;
                 height: 0.85rem
@@ -43,8 +43,8 @@ header {
             padding: 0.1rem 0.5rem;
             background-color: $purple;
             font: {
-                family: $pro;
-                size: 0.8rem;
+                // family: $pro;
+                // size: 0.8rem;
             }
             & img {
                 width: 1rem;
