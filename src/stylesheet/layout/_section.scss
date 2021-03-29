@@ -1,22 +1,35 @@
 .hero_container {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-color: $hero-bg-color;
     & .hero_text_box {
         > .header-text {
             font-family: $pro;
             > h1 {
+                background: linear-gradient(100.27deg, #9959DB 27.43%, #308FE8 78.97%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
                 font: {
                     size: 4rem;
+                    weight: 500;
                 }
                 color: $hero-text-color;
                 & .bolder {
-                    font-size: 5rem;
+                    font-weight: 700;
                 }
-                & svg {
+                margin: 70px 0;
+            }
+            & svg {
                     width: 32px;
                     height: 32px;
                 }
+            .svg1 {
+                top: 20px;
+                left: 0;
+            }
+            .svg2 {
+                right: -13px;
+                top: 190px;
             }
         }
     }
