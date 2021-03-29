@@ -740,12 +740,22 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 @media screen and (min-width: 1012px) {
   .hero_container .hero_text_box > .header-text .svg1 {
-    left: 200px;
+    left: 100px;
+  }
+}
+@media screen and (min-width: 370px) {
+  .hero_container .hero_text_box > .header-text .svg1 {
+    left: 30px;
   }
 }
 @media screen and (min-width: 0px) {
   .hero_container .hero_text_box > .header-text .svg1 {
-    left: -12px;
+    left: 10px;
+  }
+}
+@media screen and (min-width: 0px) {
+  .hero_container .hero_text_box > .header-text .svg1 {
+    left: 22px;
     top: 0;
   }
 }
@@ -756,7 +766,7 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 @media screen and (min-width: 544px) {
   .hero_container .hero_text_box > .header-text .svg1 {
-    left: 60px;
+    left: 20px;
     top: 8px;
   }
 }
@@ -978,13 +988,13 @@ header .nav_item_right .stargazers .stargazers_count {
 @media screen and (min-width: 1280px) {
   .get_involved .ways-to-container > .contribute, .get_involved .ways-to-container > .connect, .get_involved .ways-to-container > .donate {
     width: 30%;
-    height: 330px;
+    height: 390px;
   }
 }
 @media screen and (min-width: 1012px) {
   .get_involved .ways-to-container > .contribute, .get_involved .ways-to-container > .connect, .get_involved .ways-to-container > .donate {
     width: 30%;
-    height: 330px;
+    height: 390px;
   }
 }
 .get_involved .ways-to-container > .contribute > h3, .get_involved .ways-to-container > .connect > h3, .get_involved .ways-to-container > .donate > h3 {

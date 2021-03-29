@@ -78,20 +78,23 @@
                 left : 200px;
                 }
                 @include breakpoint(breakpoint(lg)) {
-                    left: 200px;
+                    left: 100px;
                 }
                 @include breakpoint(breakpoint(s)) {
-                //   
+                    left: 30px;
+                }
+                @include breakpoint(breakpoint(ss)) {
+                    left: 10px;
                 }
                 @include breakpoint(breakpoint(xs)) {
-                    left: -12px;
+                    left: 22px;
                     top: 0;
                 }
                 @include breakpoint(breakpoint(md)) {
                     left: 80px;
                 }
                 @include breakpoint(breakpoint(sm)) {
-                    left: 60px;
+                    left: 20px;
                     top: 8px;
                 
                 }
@@ -310,11 +313,11 @@
             height: auto;
             @include breakpoint(breakpoint(xl)) {
                 width: 30%;
-                height: 330px;
+                height: 390px;
             }
             @include breakpoint(breakpoint(lg)) {
                width: 30%;
-               height: 330px;
+               height: 390px;
             }
             > h3 {
                 background-color: $blue-color;
