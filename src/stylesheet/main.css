@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 *, ::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +9,7 @@ body {
   padding: 0 10%;
   height: auto;
   background-color: #14142B;
-  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 @media screen and (min-width: 1280px) {
   body {
@@ -42,16 +43,6 @@ a {
   color: #115FA7;
 }
 
-@font-face {
-  font-family: "SF Mono";
-  src: url("/font/SFMono-Regular.ttf");
-  font-style: normal;
-}
-@font-face {
-  font-family: "SF Pro";
-  src: url("/font/SFProText-Regular.ttf");
-  font-style: normal;
-}
 /*Utlility classes for padding and margin*/
 /*padding*/
 .padd-0 {
@@ -609,7 +600,8 @@ header .nav_item_left .logo .logo_text {
 }
 header .nav_item_right .twitter_follow {
   color: #ACACAC;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
+  margin-right: 0;
 }
 header .nav_item_right .twitter_follow img {
   width: 0.85rem;
@@ -622,8 +614,6 @@ header .nav_item_right .star_project {
   border-bottom-left-radius: 50px;
   padding: 0.1rem 0.5rem;
   background-color: #653995;
-  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 0.8rem;
 }
 header .nav_item_right .star_project img {
   width: 1rem;
@@ -638,7 +628,7 @@ header .nav_item_right .stargazers {
 }
 header .nav_item_right .stargazers .stargazers_count {
   text-decoration: none;
-  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 0.8rem;
   color: #fff;
 }
@@ -649,7 +639,7 @@ header .nav_item_right .stargazers .stargazers_count {
   background-color: #14142B;
 }
 .hero_container .hero_text_box > .header-text {
-  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .hero_container .hero_text_box > .header-text > h1 {
   background: linear-gradient(100.27deg, #9959DB 27.43%, #308FE8 78.97%);
@@ -1032,6 +1022,6 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 
 footer p {
-  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
 }/*# sourceMappingURL=main.css.map */
