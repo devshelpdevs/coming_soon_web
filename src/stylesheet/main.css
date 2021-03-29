@@ -12,9 +12,28 @@ body {
 }
 @media screen and (min-width: 1280px) {
   body {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     padding: 0;
+  }
+}
+@media screen and (min-width: 1012px) {
+  body {
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 544px) {
+  body {
+    width: 70%;
+    margin: 0 auto;
   }
 }
 
@@ -626,33 +645,8 @@ header .nav_item_right .stargazers .stargazers_count {
 
 .hero_container {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: #14142B;
-}
-@media screen and (min-width: 1280px) {
-  .hero_container {
-    height: 100vh;
-  }
-}
-@media screen and (min-width: 370px) {
-  .hero_container {
-    height: 80vh;
-  }
-}
-@media screen and (min-width: 544px) {
-  .hero_container {
-    height: 80vh;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero_container {
-    height: 80vh;
-  }
-}
-@media screen and (min-width: 1012px) {
-  .hero_container {
-    height: 100vh;
-  }
 }
 .hero_container .hero_text_box > .header-text {
   font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -661,8 +655,7 @@ header .nav_item_right .stargazers .stargazers_count {
   background: linear-gradient(100.27deg, #9959DB 27.43%, #308FE8 78.97%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 4rem;
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #9959db #308fe8;
   margin: 60px 0;
@@ -670,6 +663,11 @@ header .nav_item_right .stargazers .stargazers_count {
 @media screen and (min-width: 1280px) {
   .hero_container .hero_text_box > .header-text > h1 {
     font-size: 10rem;
+  }
+}
+@media screen and (min-width: 370px) {
+  .hero_container .hero_text_box > .header-text > h1 {
+    font-size: 4rem;
   }
 }
 @media screen and (min-width: 544px) {
@@ -732,27 +730,34 @@ header .nav_item_right .stargazers .stargazers_count {
   }
 }
 .hero_container .hero_text_box > .header-text .svg1 {
-  top: 20px;
+  top: 30px;
   left: 0;
 }
 @media screen and (min-width: 1280px) {
   .hero_container .hero_text_box > .header-text .svg1 {
-    left: 130px;
+    left: 200px;
   }
 }
 @media screen and (min-width: 1012px) {
   .hero_container .hero_text_box > .header-text .svg1 {
-    left: 130px;
+    left: 200px;
   }
 }
-@media screen and (min-width: 370px) {
+@media screen and (min-width: 0px) {
+  .hero_container .hero_text_box > .header-text .svg1 {
+    left: -12px;
+    top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
   .hero_container .hero_text_box > .header-text .svg1 {
     left: 80px;
   }
 }
 @media screen and (min-width: 544px) {
   .hero_container .hero_text_box > .header-text .svg1 {
-    left: 80px;
+    left: 60px;
+    top: 8px;
   }
 }
 .hero_container .hero_text_box > .header-text .svg2 {
@@ -761,52 +766,53 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 @media screen and (min-width: 1280px) {
   .hero_container .hero_text_box > .header-text .svg2 {
-    right: 200px;
+    right: 300px;
+    top: 0;
   }
 }
 @media screen and (min-width: 1012px) {
   .hero_container .hero_text_box > .header-text .svg2 {
     right: 200px;
+    top: 0;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) {
   .hero_container .hero_text_box > .header-text .svg2 {
     right: 180px;
   }
 }
-@media screen and (min-width: 1012px) {
+@media screen and (min-width: 0px) {
   .hero_container .hero_text_box > .header-text .svg2 {
-    right: 180px;
+    right: 0;
+    top: 45px;
   }
 }
-.hero_container .hero_text {
+@media screen and (min-width: 544px) {
+  .hero_container .hero_text_box > .header-text .svg2 {
+    right: 200px;
+    top: 200px;
+  }
+}
+@media screen and (min-width: 370px) {
+  .hero_container .hero_text_box > .header-text .svg2 {
+    right: 0;
+    top: 190px;
+  }
+}
+.hero_container .hero_text_box .hero_text {
   color: #fff;
   font-size: 0.9rem;
 }
 .hero_container .hero_cta {
-  display: block;
   width: 100%;
-}
-@media screen and (min-width: 1280px) {
-  .hero_container .hero_cta {
-    width: 50%;
-    margin: 0 auto;
-  }
-}
-@media screen and (min-width: 1012px) {
-  .hero_container .hero_cta {
-    width: 50%;
-    margin: 0 auto;
-  }
 }
 .hero_container .hero_cta a {
   text-decoration: none;
   display: block;
-  width: 100%;
   background-color: #115FA7;
   border-radius: 50px;
   color: #fff;
-  padding: 20px 30px;
+  padding: 15px 30px;
 }
 .hero_container .note {
   color: #fff;
@@ -814,13 +820,6 @@ header .nav_item_right .stargazers .stargazers_count {
 .hero_container .note > a {
   text-decoration: none;
   color: #115FA7;
-}
-
-.hero_cta a {
-  text-decoration: none;
-  background-color: #115FA7;
-  border-radius: 50px;
-  color: #fff;
 }
 
 .about_container #about {
@@ -913,8 +912,10 @@ header .nav_item_right .stargazers .stargazers_count {
   flex-wrap: wrap;
 }
 .partners > .profile_wrap > .thumbnail {
-  margin: 40px 0;
-  padding: 0 20px;
+  margin: 5px 0;
+  padding: 0 5px;
+  width: 200px;
+  height: 100px;
 }
 .partners > .profile_wrap > .thumbnail > a img {
   -o-object-fit: contain;
@@ -934,6 +935,18 @@ header .nav_item_right .stargazers .stargazers_count {
     height: 200px;
   }
 }
+@media screen and (min-width: 768px) {
+  .partners > .profile_wrap > .thumbnail > a img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 544px) {
+  .partners > .profile_wrap > .thumbnail > a img {
+    width: 150px;
+    height: 150px;
+  }
+}
 
 .get_involved .head_text {
   color: #fff;
@@ -941,6 +954,7 @@ header .nav_item_right .stargazers .stargazers_count {
 .get_involved .ways-to-container {
   width: 100%;
   height: auto;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 1280px) {
   .get_involved .ways-to-container {
@@ -956,6 +970,7 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 .get_involved .ways-to-container > .contribute, .get_involved .ways-to-container > .connect, .get_involved .ways-to-container > .donate {
   border-radius: 20px;
+  width: 100%;
   line-height: 1.5;
   background-color: #fff;
   height: auto;
@@ -963,13 +978,13 @@ header .nav_item_right .stargazers .stargazers_count {
 @media screen and (min-width: 1280px) {
   .get_involved .ways-to-container > .contribute, .get_involved .ways-to-container > .connect, .get_involved .ways-to-container > .donate {
     width: 30%;
-    height: 350px;
+    height: 330px;
   }
 }
 @media screen and (min-width: 1012px) {
   .get_involved .ways-to-container > .contribute, .get_involved .ways-to-container > .connect, .get_involved .ways-to-container > .donate {
     width: 30%;
-    height: 350px;
+    height: 330px;
   }
 }
 .get_involved .ways-to-container > .contribute > h3, .get_involved .ways-to-container > .connect > h3, .get_involved .ways-to-container > .donate > h3 {
