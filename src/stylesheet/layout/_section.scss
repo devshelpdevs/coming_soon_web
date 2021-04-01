@@ -130,7 +130,7 @@
         & .hero_text {
             color: $text-color;
             font : {
-                size: 0.9rem;
+                size: 1.1rem;
             }
         }
     }
@@ -138,11 +138,12 @@
         width: 100%;
         a {
             text-decoration: none;
-            display: block;
+            // display: block;
             background-color: $blue-color;
             border-radius: 50px;
             color: $text-color;
             padding: 15px 30px;
+            font-size: 0.9rem;
         }
     }
 
