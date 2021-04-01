@@ -801,18 +801,18 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 .hero_container .hero_text_box .hero_text {
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 .hero_container .hero_cta {
   width: 100%;
 }
 .hero_container .hero_cta a {
   text-decoration: none;
-  display: block;
   background-color: #115FA7;
   border-radius: 50px;
   color: #fff;
   padding: 15px 30px;
+  font-size: 0.9rem;
 }
 .hero_container .note {
   color: #fff;
