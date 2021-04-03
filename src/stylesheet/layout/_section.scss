@@ -9,9 +9,10 @@
                 background: linear-gradient(100.27deg, #9959DB 27.43%, #308FE8 78.97%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+                line-height: 1.2;
                  @include breakpoint(breakpoint(xl)) {
                     font: {
-                    size: 10rem;
+                    size: 8rem;
                 }
                 }
                 @include breakpoint(breakpoint(s)) {
@@ -31,7 +32,7 @@
                 }
                 @include breakpoint(breakpoint(lg)) {
                     font: {
-                    size: 7.8rem;
+                    size: 7rem;
                 }
                 }
                 font: {
@@ -130,7 +131,7 @@
         & .hero_text {
             color: $text-color;
             font : {
-                size: 1.1rem;
+                size: 0.9rem;
             }
         }
     }
@@ -149,6 +150,8 @@
 
     .note {
         color: $text-color;
+        margin: 1.4rem 0;
+        font-size: 0.9rem;
         > a {
             text-decoration: none;
             color: $blue-color;
