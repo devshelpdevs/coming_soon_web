@@ -606,6 +606,7 @@ header .nav_item_right .twitter_follow {
 header .nav_item_right .twitter_follow img {
   width: 0.85rem;
   height: 0.85rem;
+  vertical-align: middle;
 }
 header .nav_item_right .star_project {
   text-decoration: none;
@@ -618,9 +619,11 @@ header .nav_item_right .star_project {
 header .nav_item_right .star_project img {
   width: 1rem;
   height: 1rem;
+  vertical-align: middle;
 }
 header .nav_item_right .stargazers {
   border: 1px solid #653995;
+  vertical-align: middle;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   background-color: #653995;
@@ -645,6 +648,7 @@ header .nav_item_right .stargazers .stargazers_count {
   background: linear-gradient(100.27deg, #9959DB 27.43%, #308FE8 78.97%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  line-height: 1.2;
   font-size: 2rem;
   font-weight: 500;
   color: #9959db #308fe8;
@@ -652,7 +656,7 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 @media screen and (min-width: 1280px) {
   .hero_container .hero_text_box > .header-text > h1 {
-    font-size: 10rem;
+    font-size: 8rem;
   }
 }
 @media screen and (min-width: 370px) {
@@ -672,7 +676,7 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 @media screen and (min-width: 1012px) {
   .hero_container .hero_text_box > .header-text > h1 {
-    font-size: 7.8rem;
+    font-size: 7rem;
   }
 }
 .hero_container .hero_text_box > .header-text > h1 .bolder {
@@ -801,7 +805,7 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 .hero_container .hero_text_box .hero_text {
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 .hero_container .hero_cta {
   width: 100%;
@@ -816,6 +820,8 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 .hero_container .note {
   color: #fff;
+  margin: 1.4rem 0;
+  font-size: 0.9rem;
 }
 .hero_container .note > a {
   text-decoration: none;

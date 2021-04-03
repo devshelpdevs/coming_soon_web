@@ -32,7 +32,8 @@ header {
             margin-right: 0;
             & img {
                 width:0.85rem;
-                height: 0.85rem
+                height: 0.85rem;
+                vertical-align: middle;
             }
         }
         .star_project {
@@ -49,10 +50,12 @@ header {
             & img {
                 width: 1rem;
                 height: 1rem;
+                vertical-align: middle;
             }
         }
         .stargazers {
             border: 1px  solid $purple;
+            vertical-align: middle;
             border-top-right-radius: 50px;
             border-bottom-right-radius: 50px;
             background-color: $purple;
