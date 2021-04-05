@@ -9,7 +9,7 @@
                 background: linear-gradient(100.27deg, #9959DB 27.43%, #308FE8 78.97%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                line-height: 1.2;
+                line-height: 1.1;
                  @include breakpoint(breakpoint(xl)) {
                     font: {
                     size: 8rem;
@@ -17,17 +17,17 @@
                 }
                 @include breakpoint(breakpoint(s)) {
                 font: {
-                    size: 4rem;
+                    size: 3rem;
                     }
                 }
                 @include breakpoint(breakpoint(sm)) {
                    font: {
-                    size: 4rem;
+                    size: 3rem;
                 } 
                 }
                 @include breakpoint(breakpoint(md)) {
                    font: {
-                    size: 4rem;
+                    size: 3rem;
                 } 
                 }
                 @include breakpoint(breakpoint(lg)) {
@@ -129,9 +129,10 @@
             }
         }
         & .hero_text {
-            color: $text-color;
+            color: $intro-color;
+            padding: 0 10%;
             font : {
-                size: 0.9rem;
+                size: 1rem;
             }
         }
     }
@@ -149,9 +150,10 @@
     }
 
     .note {
-        color: $text-color;
+        color: $intro-color;
         margin: 1.4rem 0;
-        font-size: 0.9rem;
+        font-size: 1rem;
+        padding: 0 10%;
         > a {
             text-decoration: none;
             color: $blue-color;
@@ -161,30 +163,32 @@
 
 .about_container {
     #about {
-        color: #fff;
+        color: $h_color;
         font: {
-            size: 2.5rem;
+            size: 2rem;
         }
     }
     & .project_readme {
             .projectReadme_intro {
-                color: $intro_color;
+                color: $purple;
+                font-size: 1rem;
             }
             .motivation {
                 color:$purple;
             }
             .key_text {
-                color: $intro_color;
+                color: $points-color;
+                font-size: 0.9rem;
             }   
             .para-left, .para-right {
-                color: $text-color;
+                color: $intro-color;
             } 
     }
 }
 
 .readme-ul {
     .readme-li {
-        color: $text-color;
+        color: $intro-color;
         line-height: 1.6;
     }
 }
@@ -192,12 +196,14 @@
 
 // }
 .challenges-p {
-    color:$text-color;
+    color:$intro-color;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 .key_text {
-    color: $intro_color;
+    color: $points_color;
     font: {
-        size: 1.3rem;
+        size: 0.9rem;
     }
     line-height: 1.4;
 
@@ -208,7 +214,7 @@
 }
 
 .para-left, .para-right , p{
-                color: $text-color;
+                color: $intro-color;
                 width: 100%;
                 line-height: 1.6;
             } 
@@ -247,7 +253,7 @@
 
 .partners {
     > .partner_heading {
-        color: $text-color;
+        color: $h-color;
     }
 
     > .profile_wrap {
@@ -295,7 +301,7 @@
 
 .get_involved {
     .head_text {
-        color:$text-color;
+        color:$h-color;
     }
     & .ways-to-container {
         width: 100%;
@@ -326,7 +332,7 @@
             > h3 {
                 background-color: $blue-color;
                 border-radius: 20px;
-                color: $text-color;
+                color: $get_in_color;
                 font-size: 0.9rem;
             }
             > p {
@@ -340,8 +346,9 @@
                     size: 0.9rem;
                 }
                 > img {
-                    width:0.8rem;
-                    height: 0.8rem;
+                    width:1rem;
+                    height: 1rem;
+                    vertical-align: middle;
                 }
             }
         }
@@ -350,7 +357,7 @@
             > h3 {
                 background-color: $hero-bg-color;
                 border-radius: 20px;
-                color: $text-color;
+                color: $get_in_color;
             }
             > .in_link {
                 border: 1px solid $blue-color;
@@ -362,8 +369,36 @@
             > h3 {
                 background-color: $purple;
                 border-radius: 20px;
-                color: $text-color;
+                color: $get_in_color
             }
         }
     }
+}
+
+// set background colors for each section
+// about container {}
+.project_readme {
+    background-color: $div1BgColor;
+    padding: 0 10%;
+    line-height: 1.2;
+}
+.goals_section {
+    background-color: $div2BgColor;
+    padding: 0 10%;
+    line-height: 1.2;
+}
+.challenges_section {
+    @extend .project_readme;
+}
+.support_section {
+    @extend .goals_section;
+}
+.proceed_section {
+    @extend .project_readme;
+}
+.partners {
+    @extend .goals_section;
+}
+.get_involved{
+    @extend .goals_section;
 }
