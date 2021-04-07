@@ -6,34 +6,31 @@
 }
 body {
   width: 100%;
-  padding: 0 10%;
-  height: auto;
+  height: 100vh;
   background-color: #14142B;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 @media screen and (min-width: 1280px) {
   body {
-    width: 60%;
     margin: 0 auto;
     padding: 0;
+    height: auto;
   }
 }
 @media screen and (min-width: 1012px) {
   body {
-    width: 80%;
     padding: 0;
     margin: 0 auto;
+    height: auto;
   }
 }
 @media screen and (min-width: 768px) {
   body {
-    width: 80%;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 544px) {
   body {
-    width: 70%;
     margin: 0 auto;
   }
 }
@@ -579,12 +576,22 @@ a {
 }
 
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
 header {
   width: 100%;
+  padding: 0 2%;
+}
+@media screen and (min-width: 1280px) {
+  header {
+    padding: 0 10%;
+  }
+}
+@media screen and (min-width: 1012px) {
+  header {
+    padding: 0 10%;
+  }
 }
 header .nav_item_left .logo > a {
   text-decoration: none;
@@ -594,45 +601,115 @@ header .nav_item_left .logo > a img {
   height: 2.5rem;
 }
 header .nav_item_left .logo .logo_text {
-  margin-left: 0.4rem;
+  margin-left: 0.2rem;
   color: #ACACAC;
-  font-size: 0.7rem;
+  font-size: 0.3rem;
+}
+@media screen and (min-width: 1012px) {
+  header .nav_item_left .logo .logo_text {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header .nav_item_left .logo .logo_text {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 544px) {
+  header .nav_item_left .logo .logo_text {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 300px) {
+  header .nav_item_left .logo .logo_text {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 300px) {
+  header .nav_item_left .logo .logo_text {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .nav_item_left .logo .logo_text {
+    font-size: 0.9rem;
+  }
 }
 header .nav_item_right .twitter_follow {
   color: #ACACAC;
-  font-size: 0.6rem;
-  margin-right: 0;
+  font-size: 0.5rem;
+  margin-right: 0.5rem !important;
 }
 header .nav_item_right .twitter_follow img {
-  width: 0.85rem;
-  height: 0.85rem;
+  width: 0.6rem;
+  height: 0.6rem;
   vertical-align: middle;
+}
+@media screen and (min-width: 1012px) {
+  header .nav_item_right .twitter_follow {
+    margin-right: 4rem !important;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header .nav_item_right .twitter_follow {
+    margin-right: 4rem !important;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 300px) {
+  header .nav_item_right .twitter_follow {
+    margin-right: 0.5rem !important;
+    font-size: 0.8rem;
+  }
+  header .nav_item_right .twitter_follow img {
+    width: 0.8rem;
+    height: 0.8rem;
+    vertical-align: middle;
+  }
+}
+@media screen and (min-width: 400px) {
+  header .nav_item_right .twitter_follow {
+    margin-right: 3rem !important;
+    font-size: 0.8rem !important;
+  }
+}
+@media screen and (min-width: 544px) {
+  header .nav_item_right .twitter_follow {
+    margin-right: 4rem !important;
+    font-size: 0.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .nav_item_right .twitter_follow {
+    margin-right: 4rem !important;
+    font-size: 0.5rem;
+  }
 }
 header .nav_item_right .star_project {
   text-decoration: none;
-  border: 1px solid #653995;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
-  padding: 0.1rem 0.5rem;
-  background-color: #653995;
+  padding: 0rem 0.6rem;
+  background-color: #653695;
+  margin-right: 0.1rem;
 }
 header .nav_item_right .star_project img {
-  width: 1rem;
-  height: 1rem;
+  width: 0.8rem;
+  height: 0.8rem;
   vertical-align: middle;
 }
 header .nav_item_right .stargazers {
-  border: 1px solid #653995;
   vertical-align: middle;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
-  background-color: #653995;
-  padding: 0.1rem 0.5rem;
+  background-color: #653695;
+  padding: 0rem 0.6rem;
 }
 header .nav_item_right .stargazers .stargazers_count {
   text-decoration: none;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   color: #fff;
 }
 
@@ -641,12 +718,23 @@ header .nav_item_right .stargazers .stargazers_count {
   height: auto;
   background-color: #14142B;
 }
+@media screen and (min-width: 1012px) {
+  .hero_container {
+    padding: 0 10%;
+  }
+}
+@media screen and (min-width: 1012px) {
+  .hero_container {
+    padding: 0 10%;
+  }
+}
 .hero_container .hero_text_box > .header-text {
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .hero_container .hero_text_box > .header-text > h1 {
   background: linear-gradient(100.27deg, #9959DB 27.43%, #308FE8 78.97%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1.2;
   font-size: 2rem;
@@ -659,19 +747,24 @@ header .nav_item_right .stargazers .stargazers_count {
     font-size: 8rem;
   }
 }
-@media screen and (min-width: 370px) {
+@media screen and (min-width: 300px) {
   .hero_container .hero_text_box > .header-text > h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 400px) {
+  .hero_container .hero_text_box > .header-text > h1 {
+    font-size: 3rem;
   }
 }
 @media screen and (min-width: 544px) {
   .hero_container .hero_text_box > .header-text > h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 @media screen and (min-width: 768px) {
   .hero_container .hero_text_box > .header-text > h1 {
-    font-size: 4rem;
+    font-size: 7rem;
   }
 }
 @media screen and (min-width: 1012px) {
@@ -687,7 +780,7 @@ header .nav_item_right .stargazers .stargazers_count {
     margin: 70px 0;
   }
 }
-@media screen and (min-width: 370px) {
+@media screen and (min-width: 400px) {
   .hero_container .hero_text_box > .header-text > h1 {
     margin: 70px 0;
   }
@@ -695,6 +788,11 @@ header .nav_item_right .stargazers .stargazers_count {
 @media screen and (min-width: 544px) {
   .hero_container .hero_text_box > .header-text > h1 {
     margin: 60px 0;
+  }
+}
+@media screen and (min-width: 300px) {
+  .hero_container .hero_text_box > .header-text > h1 {
+    margin: 50px 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -717,6 +815,12 @@ header .nav_item_right .stargazers .stargazers_count {
     height: 80px;
   }
 }
+@media screen and (min-width: 544px) {
+  .hero_container .hero_text_box > .header-text svg {
+    width: 60px;
+    height: 60px;
+  }
+}
 @media screen and (min-width: 1012px) {
   .hero_container .hero_text_box > .header-text svg {
     width: 80px;
@@ -724,33 +828,30 @@ header .nav_item_right .stargazers .stargazers_count {
   }
 }
 .hero_container .hero_text_box > .header-text .svg1 {
-  top: 30px;
-  left: 0;
+  top: 3px;
+  left: 25px;
 }
 @media screen and (min-width: 1280px) {
   .hero_container .hero_text_box > .header-text .svg1 {
-    left: 200px;
+    left: 170px !important;
+    top: 50px !important;
   }
 }
 @media screen and (min-width: 1012px) {
   .hero_container .hero_text_box > .header-text .svg1 {
-    left: 100px;
+    left: 300px !important;
+    top: 50px !important;
   }
 }
-@media screen and (min-width: 370px) {
+@media screen and (min-width: 300px) {
   .hero_container .hero_text_box > .header-text .svg1 {
-    left: 30px;
+    left: 22px !important;
+    top: 6px !important;
   }
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 400px) {
   .hero_container .hero_text_box > .header-text .svg1 {
-    left: 10px;
-  }
-}
-@media screen and (min-width: 0px) {
-  .hero_container .hero_text_box > .header-text .svg1 {
-    left: 22px;
-    top: 0;
+    left: 40px !important;
   }
 }
 @media screen and (min-width: 768px) {
@@ -760,52 +861,42 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 @media screen and (min-width: 544px) {
   .hero_container .hero_text_box > .header-text .svg1 {
-    left: 20px;
-    top: 8px;
+    left: 10px !important;
+    top: 0px;
   }
 }
 .hero_container .hero_text_box > .header-text .svg2 {
-  right: -13px;
-  top: 190px;
-}
-@media screen and (min-width: 1280px) {
-  .hero_container .hero_text_box > .header-text .svg2 {
-    right: 300px;
-    top: 0;
-  }
-}
-@media screen and (min-width: 1012px) {
-  .hero_container .hero_text_box > .header-text .svg2 {
-    right: 200px;
-    top: 0;
-  }
+  right: 38px;
+  top: 50px;
 }
 @media screen and (min-width: 768px) {
   .hero_container .hero_text_box > .header-text .svg2 {
     right: 180px;
+    top: 190px !important;
   }
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 300px) {
   .hero_container .hero_text_box > .header-text .svg2 {
-    right: 0;
-    top: 45px;
+    right: 35px;
+    top: 70px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .hero_container .hero_text_box > .header-text .svg2 {
+    right: 70px !important;
+    top: 80px;
   }
 }
 @media screen and (min-width: 544px) {
   .hero_container .hero_text_box > .header-text .svg2 {
-    right: 200px;
-    top: 200px;
-  }
-}
-@media screen and (min-width: 370px) {
-  .hero_container .hero_text_box > .header-text .svg2 {
-    right: 0;
-    top: 190px;
+    right: 50px !important;
+    top: 140px;
   }
 }
 .hero_container .hero_text_box .hero_text {
-  color: #fff;
-  font-size: 0.9rem;
+  color: #c5c5c5;
+  padding: 0 10%;
+  font-size: 1rem;
 }
 .hero_container .hero_cta {
   width: 100%;
@@ -819,9 +910,10 @@ header .nav_item_right .stargazers .stargazers_count {
   font-size: 0.9rem;
 }
 .hero_container .note {
-  color: #fff;
+  color: #c5c5c5;
   margin: 1.4rem 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  padding: 0 10%;
 }
 .hero_container .note > a {
   text-decoration: none;
@@ -829,34 +921,40 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 
 .about_container #about {
-  color: #fff;
-  font-size: 2.5rem;
+  color: #c8c8c8;
+  margin: 2rem 0 !important;
+  font-size: 2rem;
 }
-.about_container .project_readme .projectReadme_intro {
+.about_container .project_readme .projectReadme_intro, .about_container .proceed_section .projectReadme_intro, .about_container .challenges_section .projectReadme_intro {
+  color: #653695;
+  font-size: 1rem;
+}
+.about_container .project_readme .motivation, .about_container .proceed_section .motivation, .about_container .challenges_section .motivation {
+  color: #653695;
+}
+.about_container .project_readme .key_text, .about_container .proceed_section .key_text, .about_container .challenges_section .key_text {
+  color: rgba(67, 74, 116, 0.73);
+  font-size: 0.9rem;
+  display: block;
+}
+.about_container .project_readme .para-left, .about_container .proceed_section .para-left, .about_container .challenges_section .para-left, .about_container .project_readme .para-right, .about_container .proceed_section .para-right, .about_container .challenges_section .para-right {
   color: #c5c5c5;
-}
-.about_container .project_readme .motivation {
-  color: #653995;
-}
-.about_container .project_readme .key_text {
-  color: #c5c5c5;
-}
-.about_container .project_readme .para-left, .about_container .project_readme .para-right {
-  color: #fff;
 }
 
 .readme-ul .readme-li {
-  color: #fff;
+  color: #c5c5c5;
   line-height: 1.6;
 }
 
 .challenges-p {
-  color: #fff;
+  color: #c5c5c5;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .key_text {
-  color: #c5c5c5;
-  font-size: 1.3rem;
+  color: rgba(67, 74, 116, 0.73);
+  font-size: 0.9rem;
   line-height: 1.4;
 }
 .key_text::after {
@@ -864,7 +962,7 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 
 .para-left, .para-right, p {
-  color: #fff;
+  color: #c5c5c5;
   width: 100%;
   line-height: 1.6;
 }
@@ -911,7 +1009,7 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 
 .partners > .partner_heading {
-  color: #fff;
+  color: #c8c8c8;
 }
 .partners > .profile_wrap {
   width: 100%;
@@ -955,7 +1053,7 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 
 .get_involved .head_text {
-  color: #fff;
+  color: #c8c8c8;
 }
 .get_involved .ways-to-container {
   width: 100%;
@@ -996,7 +1094,7 @@ header .nav_item_right .stargazers .stargazers_count {
 .get_involved .ways-to-container > .contribute > h3, .get_involved .ways-to-container > .connect > h3, .get_involved .ways-to-container > .donate > h3 {
   background-color: #115FA7;
   border-radius: 20px;
-  color: #fff;
+  color: #DDDDDD;
   font-size: 0.9rem;
 }
 .get_involved .ways-to-container > .contribute > p, .get_involved .ways-to-container > .connect > p, .get_involved .ways-to-container > .donate > p {
@@ -1009,25 +1107,39 @@ header .nav_item_right .stargazers .stargazers_count {
   font-size: 0.9rem;
 }
 .get_involved .ways-to-container > .contribute > .in_link > img, .get_involved .ways-to-container > .connect > .in_link > img, .get_involved .ways-to-container > .donate > .in_link > img {
-  width: 0.8rem;
-  height: 0.8rem;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: middle;
 }
 .get_involved .ways-to-container > .donate > h3 {
   background-color: #14142B;
   border-radius: 20px;
-  color: #fff;
+  color: #DDDDDD;
 }
 .get_involved .ways-to-container > .donate > .in_link {
   border: 1px solid #115FA7;
   border-radius: 20px;
 }
 .get_involved .ways-to-container > .connect > h3 {
-  background-color: #653995;
+  background-color: #653695;
   border-radius: 20px;
-  color: #fff;
+  color: #DDDDDD;
+}
+
+.project_readme, .proceed_section, .challenges_section {
+  background-color: rgba(17, 95, 167, 0.06);
+  padding: 0 10%;
+  line-height: 1.2;
+}
+
+.goals_section, .get_involved, .partners, .support_section {
+  background-color: #14142B;
+  padding: 0 10%;
+  line-height: 1.2;
 }
 
 footer p {
+  margin: 1rem 0 !important;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
 }/*# sourceMappingURL=main.css.map */
