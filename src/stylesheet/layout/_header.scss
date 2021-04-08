@@ -20,11 +20,29 @@ header {
              }
              & .logo_text {
                 margin : {
-                    left: 0.4rem;
+                    left: 0.2rem;
                 }
                 color: $header-text-color;
                 font: {
-                    size: 0.8rem;
+                    size: 0.3rem;
+                }
+                @include breakpoint(breakpoint(lg)) {
+                    font-size: 0.9rem;
+                }
+                @include breakpoint(breakpoint(xl)) {
+                    font-size: 0.9rem;
+                }
+                @include breakpoint(breakpoint(sm)) {
+                    font-size: 0.9rem;
+                }
+                @include breakpoint(breakpoint(ss)) {
+                    font-size: 0.8rem;
+                }
+                @include breakpoint(breakpoint(ss)) {
+                    font-size: 0.8rem;
+                }
+                @include breakpoint(breakpoint(md)) {
+                    font-size: 0.9rem;
                 }
              }
         }
@@ -33,20 +51,63 @@ header {
         .twitter_follow {
             color: $header-text-color;
             font: {
-                size: 0.8rem;
+                size: 0.5rem;
             }
-            margin-right: 1rem !important;
+            margin-right: 0.5rem !important;
             & img {
-                width:0.85rem;
-                height: 0.85rem;
+                width: 0.6rem;
+                height: 0.6rem;
                 vertical-align: middle;
             }
             @include breakpoint(breakpoint(lg)) {
                 margin-right: 4rem !important;
+                font: {
+                    size: 0.9rem;
+                }
             }
             @include breakpoint(breakpoint(xl)) {
                 margin: {
                     right: 4rem !important;
+                }
+                font: {
+                    size: 0.9rem;
+                }
+            }
+            @include breakpoint(breakpoint(ss)) {
+                margin: {
+                    right: 0.5rem !important;
+                }
+                font: {
+                    size: 0.8rem;
+                }
+                & img {
+                width: 0.8rem;
+                height: 0.8rem;
+                vertical-align: middle;
+            }
+            }
+            @include breakpoint(breakpoint(s)) {
+                margin: {
+                    right: 3rem !important;
+                }
+                font: {
+                    size: 0.8rem !important;
+                }
+            }
+            @include breakpoint(breakpoint(sm)) {
+                margin: {
+                    right: 4rem !important;
+                }
+                font: {
+                    size: 0.5rem;
+                }
+            }
+            @include breakpoint(breakpoint(md)) {
+                margin: {
+                    right: 4rem !important;
+                }
+                font: {
+                    size: 0.5rem;
                 }
             }
         }
@@ -55,7 +116,7 @@ header {
             // border: 1px solid red;
             border-top-left-radius: 50px;
             border-bottom-left-radius: 50px;
-            padding: 0rem 0.9rem;
+            padding: 0rem 0.6rem;
             background-color: $purple;
             margin: {
                 right: 0.1rem;
@@ -72,12 +133,12 @@ header {
             border-top-right-radius: 50px;
             border-bottom-right-radius: 50px;
             background-color: $purple;
-            padding: 0rem 0.9rem;
+            padding: 0rem 0.6rem;
             & .stargazers_count {
                 text-decoration: none;
                 font: {
                     family: $pro;
-                    size: 0.7rem;
+                    size: 0.5rem;
                 }
                 color: $text-color;
             }
