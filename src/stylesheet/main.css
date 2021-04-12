@@ -10,7 +10,7 @@ body {
   background-color: #14142B;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1400px) {
   body {
     margin: 0 auto;
     padding: 0;
@@ -583,7 +583,7 @@ header {
   width: 100%;
   padding: 0 2%;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1400px) {
   header {
     padding: 0 10%;
   }
@@ -600,38 +600,38 @@ header .nav_item_left .logo > a img {
   width: 2.5rem;
   height: 2.5rem;
 }
-header .nav_item_left .logo .logo_text {
+header .nav_item_left .logo .logo_text > a {
   margin-left: 0.2rem;
   color: #ACACAC;
   font-size: 0.3rem;
 }
 @media screen and (min-width: 1012px) {
-  header .nav_item_left .logo .logo_text {
+  header .nav_item_left .logo .logo_text > a {
     font-size: 0.9rem;
   }
 }
-@media screen and (min-width: 1280px) {
-  header .nav_item_left .logo .logo_text {
+@media screen and (min-width: 1400px) {
+  header .nav_item_left .logo .logo_text > a {
     font-size: 0.9rem;
   }
 }
 @media screen and (min-width: 544px) {
-  header .nav_item_left .logo .logo_text {
+  header .nav_item_left .logo .logo_text > a {
     font-size: 0.9rem;
   }
 }
 @media screen and (min-width: 300px) {
-  header .nav_item_left .logo .logo_text {
+  header .nav_item_left .logo .logo_text > a {
     font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 300px) {
-  header .nav_item_left .logo .logo_text {
+  header .nav_item_left .logo .logo_text > a {
     font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 768px) {
-  header .nav_item_left .logo .logo_text {
+  header .nav_item_left .logo .logo_text > a {
     font-size: 0.9rem;
   }
 }
@@ -644,18 +644,6 @@ header .nav_item_right .twitter_follow img {
   width: 0.6rem;
   height: 0.6rem;
   vertical-align: middle;
-}
-@media screen and (min-width: 1012px) {
-  header .nav_item_right .twitter_follow {
-    margin-right: 4rem !important;
-    font-size: 0.9rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  header .nav_item_right .twitter_follow {
-    margin-right: 4rem !important;
-    font-size: 0.9rem;
-  }
 }
 @media screen and (min-width: 300px) {
   header .nav_item_right .twitter_follow {
@@ -677,13 +665,25 @@ header .nav_item_right .twitter_follow img {
 @media screen and (min-width: 544px) {
   header .nav_item_right .twitter_follow {
     margin-right: 4rem !important;
-    font-size: 0.5rem;
+    font-size: 0.5rem !important;
   }
 }
 @media screen and (min-width: 768px) {
   header .nav_item_right .twitter_follow {
     margin-right: 4rem !important;
-    font-size: 0.5rem;
+    font-size: 0.5rem !important;
+  }
+}
+@media screen and (min-width: 1012px) {
+  header .nav_item_right .twitter_follow {
+    margin-right: 4rem !important;
+    font-size: 0.9rem !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  header .nav_item_right .twitter_follow {
+    margin-right: 4rem !important;
+    font-size: 1rem !important;
   }
 }
 header .nav_item_right .star_project {
@@ -711,6 +711,11 @@ header .nav_item_right .stargazers .stargazers_count {
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 0.5rem;
   color: #fff;
+}
+@media screen and (min-width: 1400px) {
+  header .nav_item_right .stargazers .stargazers_count {
+    font-size: 0.8rem;
+  }
 }
 
 .hero_container {
@@ -742,11 +747,6 @@ header .nav_item_right .stargazers .stargazers_count {
   color: #9959db #308fe8;
   margin: 60px 0;
 }
-@media screen and (min-width: 1280px) {
-  .hero_container .hero_text_box > .header-text > h1 {
-    font-size: 8rem;
-  }
-}
 @media screen and (min-width: 300px) {
   .hero_container .hero_text_box > .header-text > h1 {
     font-size: 2.5rem;
@@ -769,13 +769,18 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 @media screen and (min-width: 1012px) {
   .hero_container .hero_text_box > .header-text > h1 {
-    font-size: 7rem;
+    font-size: 8rem !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero_container .hero_text_box > .header-text > h1 {
+    font-size: 11.5rem !important;
   }
 }
 .hero_container .hero_text_box > .header-text > h1 .bolder {
   font-weight: 900;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1400px) {
   .hero_container .hero_text_box > .header-text > h1 {
     margin: 70px 0;
   }
@@ -809,12 +814,6 @@ header .nav_item_right .stargazers .stargazers_count {
   width: 32px;
   height: 32px;
 }
-@media screen and (min-width: 1280px) {
-  .hero_container .hero_text_box > .header-text svg {
-    width: 80px;
-    height: 80px;
-  }
-}
 @media screen and (min-width: 544px) {
   .hero_container .hero_text_box > .header-text svg {
     width: 60px;
@@ -830,18 +829,6 @@ header .nav_item_right .stargazers .stargazers_count {
 .hero_container .hero_text_box > .header-text .svg1 {
   top: 3px;
   left: 25px;
-}
-@media screen and (min-width: 1280px) {
-  .hero_container .hero_text_box > .header-text .svg1 {
-    left: 170px !important;
-    top: 50px !important;
-  }
-}
-@media screen and (min-width: 1012px) {
-  .hero_container .hero_text_box > .header-text .svg1 {
-    left: 300px !important;
-    top: 50px !important;
-  }
 }
 @media screen and (min-width: 300px) {
   .hero_container .hero_text_box > .header-text .svg1 {
@@ -863,6 +850,18 @@ header .nav_item_right .stargazers .stargazers_count {
   .hero_container .hero_text_box > .header-text .svg1 {
     left: 10px !important;
     top: 0px;
+  }
+}
+@media screen and (min-width: 1012px) {
+  .hero_container .hero_text_box > .header-text .svg1 {
+    left: 100px !important;
+    top: 20px !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero_container .hero_text_box > .header-text .svg1 {
+    left: 0px !important;
+    top: 30px !important;
   }
 }
 .hero_container .hero_text_box > .header-text .svg2 {
@@ -891,6 +890,18 @@ header .nav_item_right .stargazers .stargazers_count {
   .hero_container .hero_text_box > .header-text .svg2 {
     right: 50px !important;
     top: 140px;
+  }
+}
+@media screen and (min-width: 1012px) {
+  .hero_container .hero_text_box > .header-text .svg2 {
+    right: 140px !important;
+    top: 240px !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero_container .hero_text_box > .header-text .svg2 {
+    right: 50px !important;
+    top: 360px !important;
   }
 }
 .hero_container .hero_text_box .hero_text {
@@ -967,7 +978,7 @@ header .nav_item_right .stargazers .stargazers_count {
   line-height: 1.6;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1400px) {
   .para-left {
     width: 70%;
     margin: 2rem auto 0 0;
@@ -982,7 +993,7 @@ header .nav_item_right .stargazers .stargazers_count {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1400px) {
   .para-right {
     width: 70%;
     margin: 2rem 0 0 auto;
@@ -997,7 +1008,7 @@ header .nav_item_right .stargazers .stargazers_count {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1400px) {
   .readme-li {
     font-size: 0.9rem;
   }
@@ -1027,7 +1038,7 @@ header .nav_item_right .stargazers .stargazers_count {
   width: 90%;
   height: 100%;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1400px) {
   .partners > .profile_wrap > .thumbnail > a img {
     width: 200px;
     height: 200px;
@@ -1060,7 +1071,7 @@ header .nav_item_right .stargazers .stargazers_count {
   height: auto;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1400px) {
   .get_involved .ways-to-container {
     flex-direction: row !important;
     justify-content: space-between !important;
@@ -1079,7 +1090,7 @@ header .nav_item_right .stargazers .stargazers_count {
   background-color: #fff;
   height: auto;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1400px) {
   .get_involved .ways-to-container > .contribute, .get_involved .ways-to-container > .connect, .get_involved .ways-to-container > .donate {
     width: 30%;
     height: 390px;
