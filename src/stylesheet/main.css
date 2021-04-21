@@ -1084,7 +1084,10 @@ header .nav_item_right .stargazers .stargazers_count {
   }
 }
 .get_involved .ways-to-container > .contribute, .get_involved .ways-to-container > .connect, .get_involved .ways-to-container > .donate {
-  border-radius: 20px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
   width: 100%;
   line-height: 1.5;
   background-color: #fff;
@@ -1104,7 +1107,8 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 .get_involved .ways-to-container > .contribute > h3, .get_involved .ways-to-container > .connect > h3, .get_involved .ways-to-container > .donate > h3 {
   background-color: #115FA7;
-  border-radius: 20px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   color: #DDDDDD;
   font-size: 0.9rem;
 }
@@ -1114,7 +1118,7 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 .get_involved .ways-to-container > .contribute > .in_link, .get_involved .ways-to-container > .connect > .in_link, .get_involved .ways-to-container > .donate > .in_link {
   display: block;
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 0.9rem;
 }
 .get_involved .ways-to-container > .contribute > .in_link > img, .get_involved .ways-to-container > .connect > .in_link > img, .get_involved .ways-to-container > .donate > .in_link > img {
@@ -1124,16 +1128,15 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 .get_involved .ways-to-container > .donate > h3 {
   background-color: #14142B;
-  border-radius: 20px;
+  border: 1px solid #1c1c3a;
   color: #DDDDDD;
 }
 .get_involved .ways-to-container > .donate > .in_link {
-  border: 1px solid #115FA7;
-  border-radius: 20px;
+  text-decoration: underline;
+  text-align: center;
 }
 .get_involved .ways-to-container > .connect > h3 {
   background-color: #653695;
-  border-radius: 20px;
   color: #DDDDDD;
 }
 
