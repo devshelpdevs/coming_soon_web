@@ -1168,7 +1168,7 @@ header .nav_item_right .stargazers .stargazers_count {
 .get_involved_wrapper .box a {
   display: inline-block;
   text-decoration: none !important;
-  color: #115FA7;
+  color: #6e719f;
   font-size: 0.85rem !important;
   font-weight: 400;
   padding: 10px !important;
@@ -1181,11 +1181,11 @@ header .nav_item_right .stargazers .stargazers_count {
 .get_involved_wrapper .box-2 a {
   width: 65%;
   padding: 9px !important;
-  transition: background 0.4s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 
 .get_involved_wrapper .box-2 a:hover {
-  border: none !important;
+  border-color: #14142B !important;
   background-color: #14142b;
   color: #fff;
 }
