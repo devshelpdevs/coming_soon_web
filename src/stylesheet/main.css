@@ -946,7 +946,7 @@ header .nav_item_right .stargazers .stargazers_count {
 .about_container .project_readme .key_text, .about_container .proceed_section .key_text, .about_container .challenges_section .key_text {
   color: rgba(67, 74, 116, 0.73);
   font-size: 0.9rem;
-  display: block;
+  /* display: block; */
 }
 .about_container .project_readme .para-left, .about_container .proceed_section .para-left, .about_container .challenges_section .para-left, .about_container .project_readme .para-right, .about_container .proceed_section .para-right, .about_container .challenges_section .para-right {
   color: #c5c5c5;
@@ -1084,7 +1084,7 @@ header .nav_item_right .stargazers .stargazers_count {
   }
 }
 .get_involved .ways-to-container > .contribute, .get_involved .ways-to-container > .connect, .get_involved .ways-to-container > .donate {
-  border-radius: 20px;
+  border-radius: 40px;
   width: 100%;
   line-height: 1.5;
   background-color: #fff;
@@ -1102,6 +1102,8 @@ header .nav_item_right .stargazers .stargazers_count {
     height: 390px;
   }
 }
+
+/* Get Involved Section */
 .get_involved .ways-to-container > .contribute > h3, .get_involved .ways-to-container > .connect > h3, .get_involved .ways-to-container > .donate > h3 {
   background-color: #115FA7;
   border-radius: 20px;
@@ -1113,7 +1115,7 @@ header .nav_item_right .stargazers .stargazers_count {
   font-size: 0.9rem;
 }
 .get_involved .ways-to-container > .contribute > .in_link, .get_involved .ways-to-container > .connect > .in_link, .get_involved .ways-to-container > .donate > .in_link {
-  display: block;
+  /* display: block; */
   text-decoration: underline;
   font-size: 0.9rem;
 }
@@ -1124,7 +1126,7 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 .get_involved .ways-to-container > .donate > h3 {
   background-color: #14142B;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   color: #DDDDDD;
 }
 .get_involved .ways-to-container > .donate > .in_link {
@@ -1133,9 +1135,72 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 .get_involved .ways-to-container > .connect > h3 {
   background-color: #653695;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   color: #DDDDDD;
 }
+
+/* Get Involved Boxes */
+.get_involved_wrapper .box {
+  border-radius: 20px;
+}
+
+/* Box Text */
+.get_involved_wrapper .box h3 {
+  padding: 45px 0 !important;
+  border: none !important;
+  font-size: 1rem !important;
+  font-weight: 400;
+}
+
+.get_involved_wrapper .box-2 h3 {
+  background-color: #21213E !important;
+}
+
+.get_involved_wrapper .box p {
+  text-align: center;
+  font-size: 0.8rem !important;
+  line-height: 1.8rem;
+  padding: 5px 15px 0 !important;
+  margin: 10px 0;
+}
+
+.get_involved_wrapper .box-3 p {
+  padding-bottom: 40px !important;
+}
+
+/* Box Links */
+.get_involved_wrapper .box a {
+  display: inline-block;
+  text-decoration: none !important;
+  color: #6e719f;
+  font-size: 0.85rem !important;
+  font-weight: 400;
+  padding: 10px !important;
+}
+
+.get_involved_wrapper .box-3 a {
+  margin-top: 20px !important;
+}
+
+.get_involved_wrapper .box-2 a {
+  width: 65%;
+  padding: 9px !important;
+  transition: background 0.3s ease-in-out;
+}
+
+.get_involved_wrapper .box-2 a:hover {
+  border-color: #14142B !important;
+  background-color: #14142b;
+  color: #fff;
+}
+
+/* Box Icons */
+.get_involved_wrapper .box a > img {
+  color: #115FA7 !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
 
 .project_readme, .proceed_section, .challenges_section {
   background-color: rgba(17, 95, 167, 0.06);
