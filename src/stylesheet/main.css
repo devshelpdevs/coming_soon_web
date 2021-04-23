@@ -1146,7 +1146,7 @@ header .nav_item_right .stargazers .stargazers_count {
 
 /* Box Text */
 .get_involved_wrapper .box h3 {
-  padding: 70px 0 !important;
+  padding: 45px 0 !important;
   border: none !important;
   font-size: 1rem !important;
   font-weight: 400;
@@ -1164,6 +1164,10 @@ header .nav_item_right .stargazers .stargazers_count {
   margin: 10px 0;
 }
 
+.get_involved_wrapper .box-3 p {
+  padding-bottom: 40px !important;
+}
+
 /* Box Links */
 .get_involved_wrapper .box a {
   display: inline-block;
@@ -1175,7 +1179,7 @@ header .nav_item_right .stargazers .stargazers_count {
 }
 
 .get_involved_wrapper .box-3 a {
-  margin-top: 50px !important;
+  margin-top: 20px !important;
 }
 
 .get_involved_wrapper .box-2 a {
