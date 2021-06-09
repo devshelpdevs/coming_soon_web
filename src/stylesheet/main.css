@@ -1331,6 +1331,7 @@ header .nav_item_right .stargazers .stargazers_count {
   border-radius: 20px;
   color: #DDDDDD;
   font-size: 0.9rem;
+  padding: 2rem 0;
 }
 
 .get_involved .ways-to-container > .contribute > p, .get_involved .ways-to-container > .donate > p, .get_involved .ways-to-container > .connect > p {
