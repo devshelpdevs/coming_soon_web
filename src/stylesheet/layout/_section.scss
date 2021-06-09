@@ -157,16 +157,62 @@
         }
     }
     .hero_cta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include breakpoint(breakpoint(md)) {
+            flex-direction: row;
+            justify-content: center;
+        }
+        @include breakpoint(breakpoint(lg)) {
+            flex-direction: row;
+            justify-content: center;
+        }
+        @include breakpoint(breakpoint(xl)) {
+            flex-direction: row;
+            justify-content: center;
+        }
         width: 100%;
         a {
             text-decoration: none;
             // display: block;
             background-color: $blue-color;
             border-radius: 50px;
-            color: $text-color;
+            color: $text-color; 
             padding: 15px 30px;
             font-size: 0.9rem;
         }
+        .github_sponsor_btn {
+            margin-top: 0.5rem;
+            @include breakpoint(breakpoint(md)) {
+                margin-top: 0;
+                margin-left: 0.5rem;
+            }
+            @include breakpoint(breakpoint(lg)) {
+                margin-top: 0;
+                margin-left: 0.5rem;
+            }
+            @include breakpoint(breakpoint(xl)) {
+                margin-top: 0;
+                margin-left: 0.5rem;
+            }
+            display: inline-block;
+            color: #24292e;
+            background-color: #fafbfc;
+            border-color: rgba(27,31,35,.15);
+            transition: background-color .2s cubic-bezier(.3,0,.5,1); 
+
+            svg {
+                vertical-align: middle;
+            }
+        }
+    }
+
+     .octicon {
+        fill: currentColor;
+    }
+    .pink-text {
+        color: #ea4aaa !important;
     }
 
     .note {
