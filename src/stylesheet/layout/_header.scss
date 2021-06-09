@@ -1,6 +1,5 @@
 header {
     width: 100%;
-    // border: 1px solid red;
     padding: 0 2%;
     @include breakpoint(breakpoint(xl)) {
         padding: 0 10%;
@@ -11,7 +10,6 @@ header {
     & .nav_item_left {
         .logo {
              > a {
-                //  display: block;
                  text-decoration: none;
                  & img {
                      width: 2.5rem;
@@ -113,7 +111,6 @@ header {
         }
         .star_project {
             text-decoration: none;
-            // border: 1px solid red;
             border-top-left-radius: 50px;
             border-bottom-left-radius: 50px;
             padding: 0rem 0.6rem;
@@ -128,7 +125,6 @@ header {
             }
         }
         .stargazers {
-            // border: 1px  solid red;
             vertical-align: middle;
             border-top-right-radius: 50px;
             border-bottom-right-radius: 50px;
@@ -138,7 +134,7 @@ header {
                 text-decoration: none;
                 font: {
                     family: $pro;
-                    size: 0.5rem;
+                    size: 0.75rem;
                 }
                 color: $text-color;
                 @include breakpoint(breakpoint(xl)) {
